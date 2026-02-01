@@ -1,7 +1,6 @@
 from fastapi import FastAPI, HTTPException, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from rag import get_financial_advice_with_rag
 from data_loader import DataLoader
 from file_parser import FileParser
 from typing import Optional
