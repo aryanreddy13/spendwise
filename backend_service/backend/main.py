@@ -2,8 +2,8 @@ from fastapi import FastAPI, HTTPException, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from data_loader import DataLoader
-from file_parser import FileParser
 from typing import Optional
+import os
 import json
 
 app = FastAPI(title="SpendWise API")
